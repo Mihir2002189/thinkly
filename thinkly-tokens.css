@@ -1,0 +1,75 @@
+/* Thinkly Design Tokens (Infotek-style) */
+:root {
+  /* Primary Palette */
+  --thinkly-primary: #1A73E8;
+  --thinkly-primary-700: #0F5CC0;
+  --thinkly-dark: #0D1B4C;
+  --thinkly-indigoStart: #3F51B5;
+  --thinkly-indigoEnd: #1E3A8A;
+  --thinkly-purple: #6C63FF;
+  --thinkly-lightBlue: #E3F2FD;
+
+  /* Neutrals / Backgrounds */
+  --thinkly-white: #FFFFFF;
+  --thinkly-bgLight: #F7F7F7;
+  --thinkly-cardBorder: #E2E8F0;
+  --thinkly-body: #4A4A4A;
+
+  /* Action / Hover */
+  --thinkly-cardHover: #F0F4FF;
+  --thinkly-linkHover: #3F51B5;
+  --thinkly-softShadow: 0 6px 18px rgba(13,27,76,0.06);
+  --thinkly-focus: 3px solid rgba(26,115,232,0.18);
+}
+
+/* Example usage: */
+.hero-bg {
+  background: linear-gradient(135deg, var(--thinkly-indigoStart) 0%, var(--thinkly-indigoEnd) 100%);
+}
+.card {
+  background: var(--thinkly-white);
+  border: 1px solid var(--thinkly-cardBorder);
+  border-radius: 12px;
+  box-shadow: var(--thinkly-softShadow);
+  transition: all .2s cubic-bezier(.2,.8,.2,1);
+}
+.card:hover {
+  background: var(--thinkly-cardHover);
+  transform: translateY(-6px);
+}
+.cta-primary {
+  background: var(--thinkly-primary);
+  color: var(--thinkly-white);
+  transition: all .2s cubic-bezier(.2,.8,.2,1);
+}
+.cta-primary:hover {
+  background: var(--thinkly-primary-700);
+}
+.cta-outline {
+  border: 1.5px solid var(--thinkly-primary);
+  color: var(--thinkly-primary);
+  background: transparent;
+}
+.cta-outline:hover {
+  background: var(--thinkly-lightBlue);
+}
+.link {
+  color: var(--thinkly-dark);
+  transition: color .2s cubic-bezier(.2,.8,.2,1);
+}
+.link:hover {
+  color: var(--thinkly-linkHover);
+}
+.focus-ring {
+  outline: var(--thinkly-focus);
+}
+.heading {
+  color: var(--thinkly-dark);
+}
+.body {
+  color: var(--thinkly-body);
+}
+.footer {
+  background: var(--thinkly-dark);
+  color: var(--thinkly-white);
+}
