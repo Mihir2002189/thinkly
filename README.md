@@ -27,7 +27,7 @@ Thinkly helps people connect with the right partners based on their **goals, int
 - **Auth & Database**: Firebase Authentication + Firestore
 - **Realtime**: Firestore listeners / WebSockets for chat
 - **AI Suggestions**: Optional integration with OpenAI or similar
-- **Hosting**: Vercel / Firebase Hosting / Netlify
+
 
 ---
 
